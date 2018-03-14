@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="SpringGenelTekrar">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/setterInjection"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/constructorInjection"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/collectionInjection"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/annotationileCollectionInjection"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/autowired"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/stereotypeannotationlar"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/javabasedspringconfuguration"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/enviromentExample"/>
+        <property name="context-root" value="SpringGenelTekrar"/>
+        <property name="java-output-path" value="/SpringGenelTekrar/build/classes"/>
+    </wb-module>
+</project-modules>

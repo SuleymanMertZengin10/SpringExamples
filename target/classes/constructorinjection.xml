@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:c="http://www.springframework.org/schema/c"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="employee1" class="model.Employee">
+<constructor-arg name="name" value="Suleyman" /> 
+<constructor-arg name="surname" value="Zengin" /> 
+<constructor-arg name="age" value="21" /> 
+<constructor-arg name="adress" ref="adress1" /> 
+</bean>
+
+<bean id="employee2" class="model.Employee">
+<constructor-arg name="name" value="Mert" /> 
+<constructor-arg name="surname" value="Zengin" /> 
+<constructor-arg name="age" value="31" /> 
+<constructor-arg name="adress" ref="adress2" /> 
+</bean>
+
+
+<bean id="adress1" class="model.Adress">
+<constructor-arg name="country" value="Türkiye"></constructor-arg>
+<constructor-arg name="city" value="Trazon"></constructor-arg>
+
+</bean>
+
+<bean id="adress2" class="model.Adress">
+<constructor-arg name="country" value="Türkiye"></constructor-arg>
+<constructor-arg name="city" value="İstanbul"></constructor-arg>
+
+</bean>
+
+
+
+
+
+
+
+
+</beans>

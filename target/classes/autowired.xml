@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context.xsd
+http://www.springframework.org/schema/util
+http://www.springframework.org/schema/util/spring-util.xsd ">
+ <!-- burası Springe @Autowired @PostConstract gibi annotationları aktif hale getir demek -->
+<context:annotation-config/>
+
+<bean id="employee1" class="modelautowired.Employee">
+<property name="name" value="Suleyman"></property>
+<property name="surname" value="Zengin"></property>
+<!-- burada adressle ilgili herhangi bir tanımlama yapmadık(ref şeklinde) 
+bunu @Autowired annotationu yardımıyla spring kendi halledecek
+-->
+</bean>
+
+<bean id="adress1" class="modelautowired.Adress">
+<property name="country" value="Türkiye"></property>
+<property name="city"    value="İstanbul"></property>
+
+</bean>
+
+
+<bean id="adress2" class="modelautowired.Adress">
+<property name="country" value="Türkiye"></property>
+<property name="city"    value="Trabzon"></property>
+
+</bean>
+
+
+
+</beans>

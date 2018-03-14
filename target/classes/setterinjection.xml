@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:c="http://www.springframework.org/schema/c"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!-- burada employee sınıfı içerisinde adress tanımlaması yapmadık  -->
+ <bean id="employee1" class="_01.model.Employee">
+ <property name="name" value="Suleyman"></property>
+ <property name="surname" value="Zengin"></property>
+ <property name="age" value="21"></property> 
+ </bean>
+ 
+  <bean id="employee2" class="_01.model.Employee">
+ <property name="name" value="Hasan"></property>
+ <property name="surname" value="Zengin"></property>
+ <property name="age" value="23"></property> 
+ </bean>
+ 
+ 
+ <!-- bir kaç adress tanımlıyoruz -->
+ <bean id="adress1" class="_01.model.Adress" >
+ <property name="country" value="Türkiye"></property>
+ <property name="city" value="İstanbul"></property>
+ </bean>
+
+ <bean id="adress2" class="_01.model.Adress" >
+ <property name="country" value="Türkiye"></property>
+ <property name="city" value="Trabzon"></property>
+ </bean>
+
+
+<!-- şimdi bir kaç employee tanımlayacağız fakat bunların içerisinde adress beanlerini kullanacağız  -->
+ <bean id="employee3" class="_01.model.Employee">
+ <property name="name" value="Mert"></property>
+ <property name="surname" value="Zengin"></property>
+ <property name="age" value="32"></property> 
+  <property name="adress" ref="adress1"></property> <!-- ref attribute ile yaptık -->
+ </bean>
+ 
+  <bean id="employee4" class="_01.model.Employee">
+ <property name="name" value="Eren"></property>
+ <property name="surname" value="Zengin"></property>
+ <property name="age" value="32"></property> 
+  <property name="adress" ref="adress2"></property> <!-- ref attribute ile yaptık -->
+ </bean>
+ 
+
+
+
+
+</beans>

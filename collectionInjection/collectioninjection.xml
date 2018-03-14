@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:c="http://www.springframework.org/schema/c"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+<bean id="list1" class="modelcollection.Employee">
+<property name="nameList">
+ <list>
+  <value>Suleyman</value>
+  <value>Mert</value>
+  <value>Eren</value>
+  <value>Burak</value>
+ </list>
+</property>
+
+</bean>
+
+<bean id="adress1" class="modelcollection.Adress">
+<property name="country" value="Türkiye"></property>
+<property name="city" value="İstanbul"></property>
+</bean>
+<bean id="adress2" class="modelcollection.Adress">
+<property name="country" value="Türkiye"></property>
+<property name="city" value="Ankara"></property>
+</bean>
+
+<!-- farklı bir beani liste inject edecez -->
+<bean id="list2" class="modelcollection.Employee">
+<property name="nameList">
+<list>
+<value>Hasan</value>
+<value>Ahmet</value>
+<value>Ali</value>
+</list>
+</property>
+<property name="adresList">
+<list>
+<ref bean="adress1"/>
+<ref bean="adress2"/>
+</list>
+</property>
+
+</bean>
+
+
+
+
+
+</beans>
