@@ -1,13 +1,13 @@
 # SpringExamples
-Burada ayrı ayrı paketler halinde 
-1-xml ile setter injection
-2-xmle ile constructor injection
-3-xml ile collection  injection
-4-annotatio ile collection injection
-5-autowired
-6-streaotype annotationlar
-7-java based spring configurasyon (java tabnlı spring configurasyonlar)
-8-enviroment annotation
+Burada ayrı ayrı paketler halinde <br/>
+1-xml ile setter injection<br/>
+2-xmle ile constructor injection<br/>
+3-xml ile collection  injection<br/>
+4-annotatio ile collection injection<br/>
+5-autowired<br/>
+6-streaotype annotationlar<br/>
+7-java based spring configurasyon (java tabnlı spring configurasyonlar)<br/>
+8-enviroment annotation<br/>
 
-#Ekstra eklemeler yaptıkça güncellenecktir...
+#Ekstra eklemeler yaptıkça güncellenecktir...<br/>
 
